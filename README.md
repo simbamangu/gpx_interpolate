@@ -1,8 +1,17 @@
 # gpx_interpolate.py
 
-Python script to interpolate GPX files using linear or spline interpolation
+Python script to interpolate GPX files using linear or spline interpolation.
 
-Interpolate latitude, longitude, elevation and speed at any spatial resolution
+Interpolate latitude, longitude, elevation and speed at any spatial resolution.
+
+Forked from https://github.com/remisalmon/gpx_interpolate
+
+Note:
+* The speed and time interpolation need investigation; how realistic are they?
+* Written GPX files need to have some sort of indication in the data that they are interpolated, non-original data - i.e. using gpx-extensions or steganographic code in decimal places, or something.
+* Output file needs to be specifiable instead of just appending _interpolated.
+* Interpolated points do not include the _original_ points.
+* Default resolution changed to 50 (1 far too small for aircraft tracks).
 
 ## Usage
 
